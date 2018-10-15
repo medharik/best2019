@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#contact,#social{
+    padding: 14px;
+    font-size: 1.1em;
+}
+#haut, #haut a{
+    background: blue;
+    color: white;
+}
+
+#logo img{
+width: 100%;
+}
+#banner img{
+    width: 100%;
+}
+.full{
+width: 100%;
+}
+.produits h2 {
+    color: #ff6600;
+    text-align: center;
+    font-size: 2.3em;
+    padding: 10px;
+    background: antiquewhite;
+}
