@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slider + intro  flex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto:true,
+                  mode:'fade',
+                  captions: true,
+                  ticker : true
+
+              });
+            });
+          </script>
+</head>
+<body>
+    <header class="b">
+
+    </header>
+    <div class="separateur"></div>
+
+    <div id="banner" class="b slider">
+     <div>  <img src="images/university.jpg" alt="image 1" title="banniere 1" >
+   </div>   
+   <div>   <img src="images/startup-slider.jpg" alt="" title="banniere 2">
+</div>
+    </div>
+
+
+    <div class="wow"></div>
+</body>
+</html>
