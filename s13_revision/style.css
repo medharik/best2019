@@ -27,7 +27,7 @@
     float: left;
     position: relative;
     overflow: hidden;
-   
+   margin-bottom: 20px;
     display: flex;
     padding: 20px;
     
@@ -128,3 +128,34 @@ display: none;
     display: block;
     transition: 2s;
 }
+
+/* <600px =>sm */
+ @media (max-width:600px) {
+
+    #contenu{
+        width: 90%;
+            background: yellow;
+
+    }
+.produit{
+    width: 100%;
+    float: none;
+    background: yellow;
+}
+
+
+
+ }
+/* medium entre 600 et 992px; */
+ @media screen and (max-width:992px) and (min-width:600px){
+    #contenu{
+        width: 90%;
+
+    }
+.produit{
+    width: 50%;
+    margin-bottom:20px;
+    
+    background: rgb(221, 147, 11);
+}
+ } 
