@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenu{
+    width: 1000px;
+    
+    min-height: 600px;
+    margin: auto;
+}
+.produit{
+    border: 2px solid grey;
+    box-sizing: border-box;
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+overflow: hidden;    
+float: left;
+margin-bottom: 20px;
+}
+.new{
+    transform: rotate(-35deg);
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    width: 106px;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    left: -28px;
+}
+
+.produit  img{
+    width: 90%;
+}
+.produit:hover img{
+    transform: scale(0.8);
+
+}
+.promo{
+    transform: rotate(0deg);
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    width: 106px;
+    text-align: center;
+    position: absolute;
+    top: -7px;
+    right: 17px;
+    width: 40px; 
+    z-index: 2;
+}
+.promo img{
+    width: 100%;
+}

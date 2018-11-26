@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    background: gray;
+    width: 1024px;
+    margin: auto;
+}
+.produit{
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-variant: small-caps;
+}
+.new{
+    background: red;
+    width: 161px;
+    padding: 10px;
+    position: absolute;
+    top: 8px;
+    left: -58px;
+    transform: rotate(-37deg);
+    color: white;
+    z-index: 2;
+    
+}
+.promo{
+    
+        background:url('images/promo.png');
+        background-size: cover;
+        width: 50px;
+        padding: 13px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        transform: rotate(-45deg);
+        color: white;
+        height: 50px;
+        border-radius: 42px;
+        line-height: 50px;
+        z-index: 9;
+    
+    
+}
+.produit img{
+    width: 90%;
+}
+.produit:hover img{
+    transform: scale(0.9);
+}
+.content h2{
+    text-align: center;
+    padding: 10px;
+}
