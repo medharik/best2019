@@ -48,7 +48,7 @@ function all(){
     $liste_produits=$rp->fetchAll();
     return $liste_produits;
 }
-function get($id){
+function find($id){
     $cnx=connecter_db();
     $rp=$cnx->prepare(" select * from produit where id=?  ");
     $rp->execute(array($id));

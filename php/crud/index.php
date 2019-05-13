@@ -12,9 +12,13 @@ $produits=all();
     <?php include "_css.php";?>
 </head>
 <body>
+
 <?php include "_menu.php";?>
     <div class="container">
-        <div class="row">
+        <div class="">
+          <h3 class="alert alert-info text-center">
+            Listes des produits
+          </h3>
         <table class="table">
   <thead>
     <tr>
@@ -33,9 +37,9 @@ $produits=all();
       </th>
       <td> <?php echo $p['libelle'];?></td>
       <td> <?php echo $p['prix'];?></td>
-      <td><a href="" class="btn btn-sm btn-danger">Supprimer</a>
-      <a href="" class="btn btn-sm btn-warning">Modifier</a>
-      <a href="" class="btn btn-sm btn-info">Consulter</a></td>
+      <td><a href="delete.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-danger">Supprimer</a>
+      <a href="edit.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-warning">Modifier</a>
+      <a href="show.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-info">Consulter</a></td>
     </tr>
   <?php } ?>
 
@@ -49,6 +53,13 @@ $produits=all();
 
 
         <?php include "_js.php";?>
+        <script>
+      $(document).ready(function(){
+        $('.table').DataTable();
+      });
+        </script>
+
+        
 
 </body>
 </html>
