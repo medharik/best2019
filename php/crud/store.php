@@ -5,5 +5,6 @@ include "module.php";
 extract($_POST);
 ajouter_produit($libelle,$prix);
 //redirection vers index.php
-header("location:index.php");
+//header("location:index.php");
+echo "produit $libelle est ajoute avec succes";
 ?>
