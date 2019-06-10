@@ -20,11 +20,11 @@ catch(PDOException $e)
 
 
 }
-function ajouter_produit($libelle,$prix,$chemin){
+function ajouter_produit($libelle,$prix,$chemin,$categorie){
 
 $cnx=connecter_db();
-$rp=$cnx->prepare("insert into produit(libelle,prix,chemin) values(?,?,?)");
-$rp->execute(array($libelle,$prix,$chemin));
+$rp=$cnx->prepare("insert into produit(libelle,prix,chemin,categorie) values(?,?,?,?)");
+$rp->execute(array($libelle,$prix,$chemin,$categorie));
 }
 
 
@@ -58,12 +58,12 @@ function find($id){
 // upload : televerser
 //$infos est une variable (tableau) qui contient des infos sur le fichiers 
 //(name, tmp_name , type , error , size)
-function televerser($infos){
-$nom =$infos['name'];
-$tmp =$infos['tmp_name'];
-$new_path="images/".md5(date('y_m_d_h_i_s')).$nom;
-move_uploaded_file($tmp, $new_path);
-return $new_path;
+function televerser($fichier){
+$nom =$fichier['name'];
+$tmp =$fichier['tmp_name'];
+$chemin="images/".md5(date('ymdhis')).$nom;
+move_uploaded_file($tmp, $chemin);
+return $chemin;
 }
 
 

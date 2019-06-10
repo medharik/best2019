@@ -34,6 +34,10 @@ var_dump($a);
     <label for="exampleInputPassword1">Photo : </label>
     <input type="file" id="photo" name="photo" class="form-control" id="exampleInputPassword1" placeholder="prix">
   </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Categorie : </label>
+    <input type="text" id="categorie" name="categorie" class="form-control" id="exampleInputPassword1" placeholder="prix">
+  </div>
   
   <button type="submit" class="btn btn-primary">Valider</button>
   <button type="button" onclick="save()" class="btn btn-primary">Valider AJAX</button>

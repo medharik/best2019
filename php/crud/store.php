@@ -7,7 +7,7 @@ include "module.php";
  $chemin=televerser($_FILES['photo']);
  
 extract($_POST);
-ajouter_produit($libelle,$prix,$chemin);
+ajouter_produit($libelle,$prix,$chemin,$categorie);
 //redirection vers index.php
 header("location:index.php");
 echo "produit $libelle est ajoute avec succes";

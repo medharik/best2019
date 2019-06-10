@@ -26,6 +26,7 @@ $produits=all();
       <th>Photos</th>
       <th scope="col">Libellé</th>
       <th scope="col">prix</th>
+      <th scope="col">categorie</th>
       <th scope="col">Actions</th>
 
     </tr>
@@ -40,6 +41,7 @@ $produits=all();
       <td><img src="<?php echo $p['chemin'];?>" alt="" width="200" class="img-thumbnail"></td>
       <td> <?php echo $p['libelle'];?></td>
       <td> <?php echo $p['prix'];?></td>
+      <td> <?php echo $p['categorie'];?></td>
       <td><a href="delete.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-danger">Supprimer</a>
       <a href="edit.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-warning">Modifier</a>
       <a href="show.php?id=<?php echo $p['id'];?>" class="btn btn-sm btn-info">Consulter</a></td>
