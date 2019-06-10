@@ -43,7 +43,7 @@ function modifier_produit($id, $libelle,$prix){
 function all(){
     
     $cnx=connecter_db();
-    $rp=$cnx->prepare(" select * from produit  ");
+    $rp=$cnx->prepare(" select * from produit limit 0,3  ");
     $rp->execute(array());
     $liste_produits=$rp->fetchAll();
     return $liste_produits;
